@@ -22,10 +22,13 @@ describe('sayHello', function() {
         expect(typeof sayHello()).toBe("string");
     });
     it('should return "Hello, Jane!" when given "Jane" parameter', function(){
-        expect(sayHello()).toBe("Hello, Jane!");
+        expect(sayHello('Jane')).toBe("Hello, Jane!");
     });
     it('should return "Hello,Alex!" when given "Alex" parameter', function() {
         expect(sayHello('Alex')).toBe("Hello, Alex!");
+    });
+    it('should return "Hello, Pat!" when given "Pat" parameter', function() {
+        expect(sayHello('Pat')).toBe("Hello, Pat!");
     });
 
 })
