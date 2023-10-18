@@ -22,3 +22,14 @@ function isVowel(input) {
     return 'aeiouAEIOU'.includes(input);
 }
 
+function add(num1, num2) {
+    let numA = parseFloat(num1);
+    let numB = parseFloat(num2);
+
+    if (!isNaN(numA) && !isNaN(numB)) {
+        return numA + numB;
+    } else {
+        return NaN;
+    }
+}
+
